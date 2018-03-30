@@ -1,0 +1,136 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-03-30T15:41:53.354Z",
+    "end": "2018-03-30T15:41:53.407Z",
+    "duration": 53,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "38f1fcd9-6c8d-4d06-9a8d-e59238d18e7b",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "3aa0e411-c832-41b0-9dc5-2b6fba0ca68c",
+        "title": "NodeUII自动化测试脚本",
+        "fullFile": "/home/hui/文档/huicli2/tests/service/router.spec.js",
+        "file": "/tests/service/router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "20e93e6e-2953-4c7a-8b5b-523ceb4fc4df",
+            "title": "API接口测试",
+            "fullFile": "/home/hui/文档/huicli2/tests/service/router.spec.js",
+            "file": "/tests/service/router.spec.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "获取测试的数据",
+                "fullTitle": "NodeUII自动化测试脚本 API接口测试 获取测试的数据",
+                "timedOut": false,
+                "duration": 23,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "request().\n    get('/index/test').\n    set('Accept', 'application/json').\n    expect('Content-Type', /json/).\n    expect(200).\n    end(function (err, response) {\n        if (response.body.data == 'hello test') {\n            done();\n        } else {\n            done(new Error('测试接口与期望数据不符合'));\n        }\n    })",
+                "err": {},
+                "isRoot": false,
+                "uuid": "1c0b74ed-c6ae-441e-824f-65f666d3c68f",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "1c0b74ed-c6ae-441e-824f-65f666d3c68f"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 23,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "b04899ec-8e0f-40f0-b5ec-429ebbb28bb4",
+            "title": "NodeUII容错测试",
+            "fullFile": "/home/hui/文档/huicli2/tests/service/router.spec.js",
+            "file": "/tests/service/router.spec.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "测试404脚本容错http code",
+                "fullTitle": "NodeUII自动化测试脚本 NodeUII容错测试 测试404脚本容错http code",
+                "timedOut": false,
+                "duration": 5,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "request()\n    .get(\"/message/notfound\")\n    .expect(404, done);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "2c439aa6-d76f-4c44-97d6-95e61cbe0909",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "2c439aa6-d76f-4c44-97d6-95e61cbe0909"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 5,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
